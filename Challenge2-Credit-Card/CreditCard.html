@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+
+        }
+        .card{
+            border-radius: 10px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+            width: 400px;
+            height: 400px;
+            background-color: lightsalmon;
+            padding: 10px 30px;
+        }
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-head">
+                <h2> Payment Details </h2>
+            </div>
+            <div class="custDetail">
+                <label for="ccnumber">Credit Card Number*</label><br>
+                <input type="text" name="fullname" id="ccnumber" placeholder="0123XXXXXX" />
+                <label for="fullname">Name on the Card*</label><br>
+                <input type="text" name="fullname" id="fullname" placeholder="Viral Parmar"/>
+            </div>
+            <div class="datecvv">
+                <label for="month">Expiry Date</label><br>
+                <input type="text" name="month" id="month" placeholder="09" />
+                <input type="text" name="year" id="year" placeholder="2024"/>
+                <label for="Scode">Security Code</label><br>
+                <input type="Scode" name="Scode" id="Scode" placeholder="2024"/>
+            </div>
+            <div class="paybttn">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
