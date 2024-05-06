@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+    .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkcyan;
+
+
+}
+.card-title{
+    text-align: center;
+    padding: 10px;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 400px;
+  background-color: lightsalmon;
+  padding: 10px 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.form input{
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: #e2e2e2;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+.form button{
+    background-color: dodgerblue;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+.form-name{
+    display: flex;
+    gap: 3px;
+}
+.form-name input{
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: #e2e2e2;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 100%;
+}
+ .card-terms {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  gap: 2px;
+  padding: 6px;
+}
+.card_terms input[type="checkbox"] {
+  background-color: #e2e2e2;
+}
+
+.card_terms span {
+  margin: 5px;
+  font-size: 10px;
+}
+.card a {
+  color: #4796ff;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <h1>Create an Account</h1>
+                <span>Already have an account? <a href=login>Sign In</a></span>
+            </div>
+            <div class="form">
+                <div class="form-name">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" />
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+                </div>
+                <input type="email" name="email" placeholder="Email" id="email" />
+                <input type="password" name="password" placeholder="Password" id="password" />
+                <button>Sign Up</button>
+            </div>
+            <div class="card-terms">
+                <input type="checkbox" name="" id="terms"><span>I have read and agree to the <a href="">Terms of Service</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
